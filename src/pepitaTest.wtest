@@ -1,0 +1,15 @@
+import pepita.*
+
+test "pepita no esta cansada" {
+	assert.notThat(pepita.estaCansada())
+}
+
+test "pepita vuela poco y no esta cansada" {
+	pepita.volar(10)
+	assert.notThat(pepita.estaCansada())
+}
+
+test "pepita vuela mucho y esta cansada" {
+	pepita.volar(100)
+	assert.that(pepita.estaCansada())
+}
