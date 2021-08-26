@@ -1,3 +1,5 @@
+import pepita.*
+
 object manzana {
 	method energiaQueAporta() {
 		return 10
@@ -9,5 +11,17 @@ object alpiste {
 	
 	method energiaQueAporta() {
 		return 2 * peso
+	}
+}
+
+object bolsaDeSemillas {
+	var cantidad = 42
+	
+	method energiaQueAporta() {
+		return cantidad
+	}
+	
+	method modificarCantidad(nuevaCantidad){
+		cantidad = nuevaCantidad
 	}
 }
